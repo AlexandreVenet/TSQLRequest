@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+	<ApplicationIcon>icon.ico</ApplicationIcon>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Title>TSQLRequest</Title>
+	<Description>Package proposant des fonctions factorisées de requêtes Transact-SQL préparées (paramètres nommés par étiquettes). </Description>
+	<Copyright>Alexandre Venet Tous droits réservés 2022</Copyright>
+	<PackageProjectUrl>https://github.com/AlexandreVenet/TSQLRequest</PackageProjectUrl>
+	<PackageIcon>icon.png</PackageIcon>
+	<Authors>Alexandre Venet</Authors>
+	<PackageTags>SQL, ADO,</PackageTags>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<RepositoryUrl>https://github.com/AlexandreVenet/TSQLRequest</RepositoryUrl>
+	<RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="icon.ico" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
